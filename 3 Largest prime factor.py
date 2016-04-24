@@ -1,11 +1,11 @@
-def bprime(kupa):
+def bprime(liczba):
     pier = []
-    for x in range(2,kupa):
-        while kupa%x==0:
+    for x in range(2,liczba):
+        while liczba%x==0:
             pier.append(x)
-            kupa=kupa/x
+            liczba=liczba/x
             print(pier)
-        if x == 1:
+        if liczba == 1:
             break
     pier.sort()
     wyn = pier[-1]
