@@ -1,7 +1,7 @@
 def bprime(kupa):
     pier = []
     for x in range(2,kupa):
-        if kupa%x==0:
+        while kupa%x==0:
             pier.append(x)
             kupa=kupa/x
             print(pier)
