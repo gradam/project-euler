@@ -5,6 +5,8 @@ def bprime(kupa):
             pier.append(x)
             kupa=kupa/x
             print(pier)
+        if x == 1:
+            break
     pier.sort()
     wyn = pier[-1]
     return(wyn)
