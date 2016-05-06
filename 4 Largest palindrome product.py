@@ -26,3 +26,19 @@ def szukacz():
     return wynik
 
 print(szukacz())
+
+######################################################################
+# NOWA
+
+def is_palindrome(b):
+	return str(b) == str(b)[::-1]
+
+
+m = 0
+for x in range(100,1000):
+	for z in range(x,1000):
+		wyn = x*z
+		if is_palindrome(wyn):
+			m = max(m, wyn)
+
+print(m)
